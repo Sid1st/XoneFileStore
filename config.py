@@ -54,7 +54,7 @@ BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 # Enable - True or Disable - False
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
-CLONE_DB_URI = is_enabled((environ.get('CLONE_DB_URI', "False")), False)
+#CLONE_DB_URI = is_enabled((environ.get('CLONE_DB_URI', "False")), False)
 
 # File Stream Config
 class Var(object):
