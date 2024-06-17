@@ -63,14 +63,9 @@ async def start(client, message):
              InlineKeyboardButton('💝 Backup Channel', url='https://t.me/MoviesXonee'),
              InlineKeyboardButton('🔍 Request Group', url='https://t.me/Movies_request_group_2024')
              ]
-            #[InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/vj_botz')
-            #]
-            # [
-            # InlineKeyboardButton('🤖 ᴄʀᴇᴀᴛᴇ ʏᴏᴜʀ ᴏᴡɴ ᴄʟᴏɴᴇ ʙᴏᴛ', callback_data='clone')
-            # ]
-            [
-            InlineKeyboardButton('💁‍♀️ ʜᴇʟᴘ', callback_data='help'),
-            InlineKeyboardButton('😊 ᴀʙᴏᴜᴛ', callback_data='about')
+        [
+             InlineKeyboardButton('💁‍♀️ ʜᴇʟᴘ', callback_data='help'),
+             InlineKeyboardButton('😊 ᴀʙᴏᴜᴛ', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         me2 = (await client.get_me()).mention
@@ -343,12 +338,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
              InlineKeyboardButton('💝 Backup Channel', url='https://t.me/MoviesXonee'),
              InlineKeyboardButton('🔍 Request Group', url='https://t.me/Movies_request_group_2024')
              ]
-            #[InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/vj_botz')
-            #]
-            # [
-            # InlineKeyboardButton('🤖 ᴄʀᴇᴀᴛᴇ ʏᴏᴜʀ ᴏᴡɴ ᴄʟᴏɴᴇ ʙᴏᴛ', callback_data='clone')
-            # ]
-            [
+        [
             InlineKeyboardButton('💁‍♀️ ʜᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('😊 ᴀʙᴏᴜᴛ', callback_data='about')
         ]]
