@@ -39,8 +39,8 @@ PICS = (environ.get('PICS', ['https://telegra.ph/file/5bdceafb32c966c5b5b4c.jpg'
                               'https://telegra.ph/file/e2515f6559c7f4da99afd.jpg',])) # Bot Start Picture
 
 # Auto Delete Information
-AUTO_DELETE = int(environ.get("AUTO_DELETE", "20")) # Time in Minutes
-AUTO_DELETE_TIME = int(environ.get("AUTO_DELETE_TIME", "1200")) # Time in Seconds
+AUTO_DELETE = int(environ.get("AUTO_DELETE", "10")) # Time in Minutes
+AUTO_DELETE_TIME = int(environ.get("AUTO_DELETE_TIME", "600")) # Time in Seconds
 
 # Channel Information
 LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1001700999955"))
@@ -54,6 +54,9 @@ BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 # Enable - True or Disable - False
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
+
+#Force Subscribe
+FORCE_SUB = int(environ.get("FORCE_SUB", "-1002171837853"))
 
 # File Stream Config
 class Var(object):
@@ -78,6 +81,6 @@ class Var(object):
     if HAS_SSL:
         URL = ""
     else:
-        URL = "h"
+        URL = ""
 
 
